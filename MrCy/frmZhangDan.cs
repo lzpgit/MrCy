@@ -51,7 +51,7 @@ namespace MrCy
             int y = dataGridView1.Columns.Count;
             int i = 1, j = 1;
 
-            Excel.Application excle = new Excel.Application();
+            Excel.Application excle = new Excel.Application();//这里或许会有问题，自行百度
             excle.Application.Workbooks.Add(true);
             excle.Visible = true;
             try
